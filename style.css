@@ -20,8 +20,9 @@ body {
   height: 100vh;
   background-image: url(./images/bg-desktop.png);
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: auto;
+  background-position: bottom center;
+  background-attachment: fixed;
+  background-size: 100% 50%;
   background-color: var(--verydarkblue);
 
   display: flex;
@@ -54,8 +55,14 @@ body {
   margin-top: 20px;
 }
 
+.icons img:hover{
+  opacity: 80%;
+  transform:scale(1.2)
+}
+
 .iconbg {
-  height: 20px;
+  height: 25px;
+  width: 30px;
   background-color: var(--verydarkblue);
   padding: 10px;
   margin-right: 10px;
@@ -164,7 +171,6 @@ body {
   body {
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
   .maincontainer {
     display: flex;
